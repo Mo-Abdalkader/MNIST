@@ -1,6 +1,6 @@
-Python 3.11
-TensorFlow 2.x
-Flask
-Pillow
-NumPy
-Matplotlib
+tensorflow>=2.10.0
+flask>=2.2.0
+pillow>=9.0.0
+numpy>=1.23.0
+matplotlib>=3.7.0
+streamlit>=1.30.0
