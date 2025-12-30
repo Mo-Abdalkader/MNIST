@@ -127,11 +127,11 @@ The model uses a custom Convolutional Neural Network optimized for MNIST digit c
 
 ```
 ┌─────────────────────────────────────────┐
-│  Input Layer (28×28×1 Grayscale)       │
+│  Input Layer (28×28×1 Grayscale)        │
 └─────────────────┬───────────────────────┘
                   │
 ┌─────────────────▼───────────────────────┐
-│  Conv2D (32 filters, 3×3, ReLU)        │  ← Extract basic features
+│  Conv2D (32 filters, 3×3, ReLU)         │  ← Extract basic features
 │  Named: 'conv1'                         │
 └─────────────────┬───────────────────────┘
                   │
@@ -140,7 +140,7 @@ The model uses a custom Convolutional Neural Network optimized for MNIST digit c
 └─────────────────┬───────────────────────┘
                   │
 ┌─────────────────▼───────────────────────┐
-│  Conv2D (64 filters, 3×3, ReLU)        │  ← Extract complex patterns
+│  Conv2D (64 filters, 3×3, ReLU)         │  ← Extract complex patterns
 │  Named: 'conv2'                         │
 └─────────────────┬───────────────────────┘
                   │
@@ -161,7 +161,7 @@ The model uses a custom Convolutional Neural Network optimized for MNIST digit c
 └─────────────────┬───────────────────────┘
                   │
 ┌─────────────────▼───────────────────────┐
-│  Output Dense (10 units, Softmax)      │  ← Digit probabilities
+│  Output Dense (10 units, Softmax)       │  ← Digit probabilities
 └─────────────────────────────────────────┘
 ```
 
