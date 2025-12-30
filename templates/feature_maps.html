@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feature Maps - MNIST Digit Classifier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CNN Feature Maps</h1>
+            <p class="tagline">Visualizing the convolutional neural network activations</p>
+        </header>
+
+        <main>
+            <div class="feature-maps-container">
+                <div class="feature-map-section">
+                    <h2>Feature Maps of ConvLayer1</h2>
+                    <div class="feature-map-image">
+                        <img src="{{ url_for('static', filename='maps/FeaturesMapConv1.png') }}" alt="Conv Layer 1 Feature Maps">
+                    </div>
+                </div>
+
+                <div class="feature-map-section">
+                    <h2>Feature Maps of ConvLayer2</h2>
+                    <div class="feature-map-image">
+                        <img src="{{ url_for('static', filename='maps/FeaturesMapConv2.png') }}" alt="Conv Layer 2 Feature Maps">
+                    </div>
+                </div>
+
+                <div class="buttons-container center-align">
+                    <button id="back-to-home-btn" class="btn">Try Another Image</button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="about-section">
+                <h3>About Feature Maps</h3>
+                <p>Feature maps show the activations of convolutional filters in different layers of the neural network. The first layer captures basic patterns like edges, while deeper layers detect more complex features.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('back-to-home-btn').addEventListener('click', function() {
+            // Reset the application state
+            fetch('/reset')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        window.location.href = '/';
+                    }
+                })
+                .catch(error => console.error('Error:', error));
+        });
+    </script>
+</body>
+</html>
