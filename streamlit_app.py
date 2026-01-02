@@ -92,6 +92,22 @@ st.markdown("""
         margin-bottom: 0.8rem;
     }
     
+    .info-card p,
+    .info-card ul,
+    .info-card li {
+        color: #333333;
+    }
+    
+    .info-card a {
+        color: #4A90E2;
+        text-decoration: none;
+    }
+    
+    .info-card a:hover {
+        color: #2A6DB8;
+        text-decoration: underline;
+    }
+    
     /* Feature map container */
     .feature-map-container {
         background: white;
@@ -653,5 +669,4 @@ def show_about_page():
     </div>
     """, unsafe_allow_html=True)
 
-# Run the main application
 main()
