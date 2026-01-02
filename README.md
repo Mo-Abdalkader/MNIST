@@ -107,11 +107,11 @@ A comprehensive web application that recognizes handwritten digits (0-9) using a
 
 <div align="center">
 
-![Demo GIF](static/images/MINST%20APP%20DEMO.gif)
+![Demo GIF](https://github.com/Mo-Abdalkader/MNIST/blob/main/MNIST%20APP%20DEMO.gif)
 
 *Real-time digit recognition in action*
 
-![App Screenshot](static/images/APP_SCREENSHORT.jpg)
+![App Screenshot](https://github.com/Mo-Abdalkader/MNIST/blob/main/APP_SCREENSHORT.jpg)
 
 *Flask application interface*
 
